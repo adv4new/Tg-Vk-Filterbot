@@ -413,19 +413,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply1 = await query.message.reply_text(
-            text="â–¢â–¢â–¢"
+            text="▣□□□"
         )
         await asyncio.sleep(0.5)
         reply2 = await reply1.edit_text(
-            text="â–£â–¢â–¢"
+            text="▣▣□□"
         )
         await asyncio.sleep(0.5)
         reply3 = await reply2.edit_text(
-            text="â–£â–£â–¢"
+            text="▣▣▣□"
         )
         await asyncio.sleep(0.5)
         reply4 = await reply3.edit_text(
-            text="â–£â–£â–£"
+            text="▣▣▣▣"
         )
         await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -447,19 +447,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats')
         ]]
         reply1 = await query.message.reply_text(
-            text="â–¢â–¢â–¢"
+            text="▣□□□"
         )
         await asyncio.sleep(0.5)
         reply2 = await reply1.edit_text(
-            text="â–£â–¢â–¢"
+            text="▣▣□□"
         )
         await asyncio.sleep(0.5)
         reply3 = await reply2.edit_text(
-            text="â–£â–£â–¢"
+            text="▣▣▣□"
         )
         await asyncio.sleep(0.5)
         reply4 = await reply3.edit_text(
-            text="â–£â–£â–£"
+            text="▣▣▣▣"
         )
         await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -477,19 +477,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
         ]]
         reply1 = await query.message.reply_text(
-            text="â–¢â–¢â–¢"
+            text="▣□□□"
         )
         await asyncio.sleep(0.5)
         reply2 = await reply1.edit_text(
-            text="â–£â–¢â–¢"
+            text="▣▣□□"
         )
         await asyncio.sleep(0.5)
         reply3 = await reply2.edit_text(
-            text="â–£â–£â–¢"
+            text="▣▣▣□"
         )
         await asyncio.sleep(0.5)
         reply4 = await reply3.edit_text(
-            text="â–£â–£â–£"
+            text="▣▣▣▣"
         )
         await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
