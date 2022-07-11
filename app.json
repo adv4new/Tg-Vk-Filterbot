@@ -16,7 +16,7 @@
       "inline"
     ],
     "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/EvamariaTG/EvaMaria",
+    "repository": "https://github.com/adv4new/Tg-Vk-Filterbot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
