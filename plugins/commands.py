@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/Mh_linkZzz')
+                InlineKeyboardButton('🍂 ᴄʜᴀɴɴᴇʟ', url='https://t.me/Mh_linkZzz')
             ],
             [
-                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🍀 ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,13 +42,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('ᴍʏ ғᴀᴛʜᴇʀ', url=f'https://t.me/thilak2003')
+            InlineKeyboardButton('🍁 ᴍʏ ғᴀᴛʜᴇʀ', url=f'https://t.me/thilak2003')
             ],[
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/moviereqgroup_movieshub')
+            InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ', url='https://t.me/moviereqgroup_movieshub')
             ],[
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🍀 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🥀 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
