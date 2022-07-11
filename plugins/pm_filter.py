@@ -64,7 +64,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"➠[{get_size(file.file_size)}] ◆{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"➠ [{get_size(file.file_size)}] ◆ {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -73,10 +73,10 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"◆{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"◆ {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"➠{get_size(file.file_size)}",
+                    text=f"➠ {get_size(file.file_size)}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -404,13 +404,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('ᴍʏ ғᴀᴛʜᴇʀ', url=f'https://t.me/thilak2003')
+            InlineKeyboardButton('🍁 ᴍʏ ғᴀᴛʜᴇʀ', url=f'https://t.me/thilak2003')
         ], [
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/Mh_linkZzz')
+            InlineKeyboardButton('🍂 ᴄʜᴀɴɴᴇʟ', url='https://t.me/Mh_linkZzz')
         ], [
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🍀 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🥀 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply1 = await query.message.reply_text(
             text="▣□□□"
@@ -437,14 +437,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('🎖ᴍᴀɴᴜᴀʟ ғɪʟᴛᴇʀ🎖', callback_data='manuelfilter'),
-            InlineKeyboardButton('ᴀᴜᴛᴏ ғɪʟᴛᴇʀ', callback_data='autofilter')
+            InlineKeyboardButton('🍁 ᴍᴀɴᴜᴀʟ ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('🍂 ᴀᴜᴛᴏ ғɪʟᴛᴇʀ', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('ᴇxᴛʀᴀ ᴍᴏᴅᴇs', callback_data='extra')
+            InlineKeyboardButton('❕ᴄᴏɴɴᴇᴄᴛɪᴏɴ❕', callback_data='coct'),
+            InlineKeyboardButton('🔹ᴇxᴛʀᴀ ᴍᴏᴅᴇs🔹', callback_data='extra')
         ], [
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats')
+            InlineKeyboardButton('🌿 ʜᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='stats')
         ]]
         reply1 = await query.message.reply_text(
             text="▣□□□"
@@ -470,11 +470,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴍᴏᴠɪᴇ ʀᴇǫ', url='https://t.me/moviereqgroup_movieshub'),
-            InlineKeyboardButton('ᴄʀᴇᴀᴛᴇʀ', callback_data='source')
+            InlineKeyboardButton('🔻ᴍᴏᴠɪᴇ ʀᴇǫ🔻', url='https://t.me/moviereqgroup_movieshub'),
+            InlineKeyboardButton('🌷ᴄʀᴇᴀᴛᴇʀ🌷', callback_data='source')
         ], [
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🍁ʜᴏᴍᴇ🍁', callback_data='start'),
+            InlineKeyboardButton('🔸ᴄʟᴏsᴇ🔸', callback_data='close_data')
         ]]
         reply1 = await query.message.reply_text(
             text="▣□□□"
