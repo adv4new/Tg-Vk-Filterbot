@@ -421,7 +421,7 @@ async def settings(client, message):
                 ),
                 InlineKeyboardButton(
                     '👤 PM' if settings["redirect_to"] == "PM" else '📄 Chat',
-                    callback_data=f'setgs#redirect_to#{settings["redirect_to"]}#{grp_id}',
+                    callback_data=f'setgs#redirect_to#{settings["redirect_to"]}#{-1001791907918}',
                 ),
             ],
             [
